@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Free Web tutorials" />
+  <meta name="keywords" content="HTML, CSS, BOOTSTRAP, SCSS, JAVASCRIPT, GIT" />
+  <meta name="author" content="ID_DI" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Employ a Student (Project_01)</title>
+  <link rel="stylesheet" href="./assets/scss/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body>
+
+
+  <nav
+    class="d-flex justify-content-md-between align-content-center navbar navbar-expand-lg navbar-light bg-warning py-3">
+    <div class="navbar-brand  logo-con d-flex flex-column align-content-center mr-0">
+      <a href="index.html" class="">
+        <img src="./assets/img/Logo.png" class="d-block mx-auto" />
+      </a>
+      <h6 class="mb-0 text-center"><small class="font-weight-bold">BRAINSTER</small></h6>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="navbar-toggler-inner rounded"></div>
+    </button>
+    <div class="collapse navbar-collapse justify-content-around align-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav d-contents academy-con">
+        <li class=" nav-item ">
+          <a class="nav-link font-weight-bold text-dark d-block py-2 px-3 link rounded-pill" type="button"
+            href="https://brainster.co/marketing/"><span class="">Академија за маркетинг</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold text-dark d-block py-2 px-3 link rounded-pill"
+            href="https://brainster.co/full-stack/"><span class="">Академија за програмирање</span>
+          </a>
+        </li>
+        <li class=" nav-item">
+          <a class="nav-link font-weight-bold text-dark d-block py-2 px-3 link rounded-pill"
+            href="https://brainster.co/data-science/"><span>Академија за data science</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold text-dark d-block py-2 px-3 link rounded-pill"
+            href="https://brainster.co/graphic-design/"><span>Академија за дизајн</span></a>
+        </li>
+    </div>
+  </nav>
+
+  <!-- FORM PAGE -->
+  <main class="container-fluid p-main bg-warning pb-md-5" id="main">
+    <div class="heading row bgc-yellow">
+      <!-- <div class="col-12">
+        <h2 class="h1 font-weight-bold text-center py-5 mb-0">Ви благодариме на Вашата соработка.</h2>
+      </div> -->
+      <iframe width="1350" height="480" src="./final_6218e00e993af3005f8747da_87667.mp4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen allow='autoplay' class="m-0"></iframe>
+    </div>
+
+  </main>
+  <footer>
+    <div class="container-fluid text-center text-white bg-dark py-2">
+      <div class="row">
+        <div class="col-12">
+          <p class="p-3 mb-0">
+            Изработено со &#10084; од студентите на Brainster
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/form.js"></script>
+</body>
+
+<script>
+  document.getElementsByClassName('custom-select')[0].style.border = "0px";
+  document.getElementsByClassName('custom-select')[0].style.background = "translatent";
+  document.getElementsByClassName('custom-select')[0].style.height = "auto";
+  document.getElementsByClassName('custom-select')[0].style.display = "block";
+  document.getElementsByClassName('custom-select')[0].style.width = "auto";
+  document.getElementsByClassName('custom-select')[0].style.padding = "0px";
+  document.getElementsByClassName('custom-select')[0].style.background = "none";
+</script>
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myFrame").src;
+    document.getElementById("demo").innerHTML = x;
+  }
+  </script>
+
+<!-- // Hamburger menu -->
+<script>
+  $(document).ready($(function () {
+    var navbtn = $('.navbar-toggler');
+    $(navbtn).click(function () {
+      $(navbtn).toggleClass('active');
+    });
+  }));
+</script>
+<!-- Hide and show div and color black -->
+<script>
+  $(".navbar-toggler").click(function () {
+    $("nav").toggleClass("bg-dark");
+  });
+  document.querySelector(".navbar-toggler").addEventListener("click", toggleAll);
+
+  function toggleAll() {
+    var logoVisibility = document.querySelector(".navbar-brand").style.visibility;
+    if (logoVisibility == "visible" || logoVisibility == "") {
+      document.querySelector(".navbar-brand").style.visibility = "hidden";
+    } else {
+      document.querySelector(".navbar-brand").style.visibility = "visible";
+    }
+
+    var displayAll = document.querySelector(".none").style.display;
+    if (displayAll == "inline-block" || displayAll == "") {
+      document.querySelector(".none").style.display = "none";
+    } else {
+      document.querySelector(".none").style.display = "inline-block";
+    }
+
+
+    document.querySelector(".navbar").classList.toggle("nav-shown");
+    document.querySelector(".navbar").classList.toggle("bg-dark");
+  }
+</script>
+
+<script>
+  $(document).ready(function () {
+    $('#search').keyup(function () {
+      var item = $('#search').val();
+      var html = "";
+      $.post("./search/attend", { 'search': item },
+        function (data) {
+          for (i = 0; i < data.bro.length; i++) {
+            options = data.bro[i].first_name, " ", data.bro[i].last_name;
+            html = html.concat("<li value='", options, "'>", data.bro[i].first_name, " ", data.bro[i].last_name, "</li>");
+          }
+          document.getElementById('selections').innerHTML = html;
+
+          $("#selections li").click(function () {
+            alert($(this).text());
+          });
+        },
+        "json");
+    });
+  });
+</script>
+
+
+</html>

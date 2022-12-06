@@ -1,0 +1,415 @@
+.logo-con {
+    flex: 0 0 16%;
+    a {
+       img {
+           width: 30%;
+
+           @media (max-width: 991px) {
+               width: 50%;
+           }
+       }
+    }
+}
+.academy-con {
+    flex: 0 1 84%;
+}
+.d-contents {
+    display: contents;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse,
+    .show {
+    height: 100vh !important;
+    transition: .2ms;
+  }
+}
+
+@media (max-width: 991px) {
+   .navbar-nav {
+       .nav-link {
+           width: max-content;
+           margin-top: 2rem;
+           margin-bottom: 0;
+           span {
+               color:white;
+               font-size: 1.2rem;
+               font-weight: bold;
+           }
+       }
+       a {
+           width: max-content;
+           .button {
+               width: 100%;
+           }
+       }
+    }
+}
+
+// X BUTTON
+@media (max-width: 991px) {
+    .m-btn {
+        margin-top: 2rem;
+        margin-left: 0.9375rem;
+        margin-bottom: 2rem;
+    }
+}
+.navbar-toggler {
+    border: 0;
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0 0 0.15em 0.35em ;
+}
+
+.navbar-toggler-inner {
+    width: 1em;
+    height: 0.16em;
+    background-color: #000000;
+    position: absolute;
+}
+
+.navbar-toggler-inner::before {
+    width: 1.5em;
+    height: 0.16em;
+    background-color: #000000;
+    position: absolute;
+}
+.navbar-toggler-inner::after {
+    width: 0.5em;
+    height: 0.16em;
+    background-color: #000000;
+    position: absolute;
+}
+
+.navbar-toggler-inner::before {
+    content: "";
+    display: block;
+    top: -0.5em;
+    right: 0;
+    border-radius: 0.25rem !important;
+}
+
+.navbar-toggler-inner::after {
+    content: "";
+    display: block;
+    bottom: -0.5em;
+    right: 0;
+    border-radius: 0.25rem !important;
+}
+
+.navbar-toggler.active .navbar-toggler-inner {
+    transition: 0.2s;
+    transform: rotate(45deg);
+    background-color: #ffffff;
+    width: 1.5em;
+   
+}
+
+.navbar-toggler.active .navbar-toggler-inner::before {
+    top: 0;
+    opacity: 0.0;
+}
+
+.navbar-toggler.active .navbar-toggler-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    background-color: #ffffff;
+    width: 1.5em;
+}
+
+.navbar-toggler-inner {
+    transition: 0.2s;
+    transform: rotate(0deg);
+}
+// X BUTTON END
+
+// GLOW HYPERLINKS
+.link {
+    /* RESET */
+    text-decoration: none;
+    line-height: 1;
+    
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    padding: 5px 5px;
+    overflow: hidden;
+    color: #333;
+    vertical-align: bottom;
+    transition: color .3s ease-out;
+}
+ 
+.link::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translateY(calc(100% - 2px));
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(60deg, #71C562 0%, #c2e59c 100%);
+    transition: transform .25s ease-out;
+}
+ 
+.link:hover { 
+    color: #fff; 
+}
+.link:hover::before {
+    transform: translateY(0);
+    transition: transform .25s ease-out;
+}
+ 
+.credits {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 1.25rem;
+    background-image: linear-gradient(60deg, #71C562 0%, #c2e59c 100%);
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    color: white;
+    letter-spacing: 1px;
+}
+ 
+.credits > a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+// GLOW HYPERLINKS-END
+
+// BUTTON EFFECT
+$black: #191919;
+$white: #FFF;
+$red: red;
+$buttonWidth: 185px;
+$buttonHeight: 45px;
+$font: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+
+
+h1 {
+   text-align: center;
+   margin-bottom: 100px;
+}
+
+// helper cleasses:
+
+.centered {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+}
+
+.full {
+   width: 100%;
+   height: 100%;
+}
+
+// button style:
+
+.button {
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .qube {
+      position: relative;
+      height: $buttonHeight;
+      width: $buttonWidth;
+      perspective: 1800px;
+      .front, .back {
+         @extend .full;
+         backface-visibility: hidden;
+         transform-style: preserve-3d;
+         transform: rotateX(-90deg);
+         transition: transform 0.3s ease;
+         position: absolute;
+         color: $white;
+         line-height: $buttonHeight;
+         text-align: center;
+      }
+      .front {
+         background-color: $black;
+         &::before {
+            @extend .centered;
+            @extend .full;
+            content: '';
+            display: block;
+            z-index: -1;
+         }
+
+         &::after {
+            background: $white;
+            content: '';
+            height: 155px;
+            left: -75px;
+            opacity: .4;
+            position: absolute;
+            top: -50px;
+            transform: rotate(35deg);
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+            width: $buttonHeight - 10px;
+            z-index: 0;
+         }
+      }
+      .back {
+         background-color:#ff0000;
+         color: $black;
+         transform: rotateX(0deg) translateZ($buttonHeight);
+      }
+      &:hover {
+         .front {
+            transform: rotateX(0deg) translateZ( $buttonHeight / 2 );
+         }
+         .back {
+            transform: rotateX(90deg) translateZ( $buttonHeight / 2 );
+         }
+      }
+   }
+   &:active {
+      .front {
+         border-radius: 0;
+         background-color: transparent;
+         color: $black;
+
+         &::before {
+            background-color: #ff0000;;
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+         }
+
+         &::after {
+            left: 120%;
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+         }
+      }
+   }
+}
+// GLOW HYPERLINKS-END
+
+// MODAL
+.modal-header-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.modal-conten-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #F9EA38;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+    
+    @media (max-width: 767px) {
+        top:4rem;
+    }
+}
+// MODAL-END
+
+// BANNER
+
+.carousel {
+    height:calc(75vh - 126.73px);
+  }
+  .carousel-item img{
+    width:100%;
+    height:calc(85vh - 126.73px);
+    object-fit:cover;
+    display:block;
+  }
+  @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+  
+  h1 {
+  font-size: calc(20px + 18vh);
+  line-height: calc(20px + 20vh);
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+  }
+  
+  @-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+  
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  /*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+  }
+  
+  @keyframes blink {
+  5%,
+  16%,
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+  
+  0%,
+  10%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  60%,
+  100% {
+  /*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+  }
+  
+  .banner {
+    position: absolute;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 11111;
+   font-size: 5vw;
+   font-weight: bolder;   
+  }
+  // banner end
+  

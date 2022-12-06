@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Free Web tutorials" />
+        <meta name="keywords" content="HTML, CSS, BOOTSTRAP, SCSS, JAVASCRIPT, GIT" />
+        <meta name="author" content="ID_DI" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Employ a Student (Project_01)</title>
+        <link rel="stylesheet" href="./assets/scss/main.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    </head>
+
+    <body>  
+        <nav class="d-flex justify-content-md-between align-content-center navbar navbar-expand-lg navbar-light bg-warning py-3">
+            <div class="navbar-brand  logo-con d-flex flex-column align-content-center mr-0">
+              <a href="index.html" class="">
+                <img src="./assets/img/Logo.png" class="d-block mx-auto" />
+              </a>
+              <h6 class="mb-0 text-center"><small class="font-weight-bold">BRAINSTER</small></h6>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="navbar-toggler-inner rounded"></div>
+          </button>
+            <div class="collapse navbar-collapse justify-content-around align-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav d-contents academy-con">
+                <li class=" nav-item ">
+                  <a class="nav-link font-weight-bold text-dark d-block py-2 px-3 link rounded-pill" type="button" href="https://brainster.co/marketing/"><span class="">Академија за маркетинг</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold text-dark d-block py-2 px-3 link rounded-pill" href="https://brainster.co/full-stack/"><span  class="">Академија за програмирање</span>
+                  </a>
+                </li>
+                <li class=" nav-item">
+                  <a class="nav-link font-weight-bold text-dark d-block py-2 px-3 link rounded-pill" href="https://brainster.co/data-science/"><span>Академија за data science</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold text-dark d-block py-2 px-3 link rounded-pill" href="https://brainster.co/graphic-design/"
+                  ><span>Академија за дизајн</span></a>
+               </li>
+               <li class="m-btn">
+                <a href="form-page.html" type="button" class="button btn-outline-red">
+                  <div class="qube">
+                    <div class="front font-weight-bold">Кликни сега!</div>
+                    <div class="back font-weight-bold">Вработи наш студент</div>
+                 </div>
+                </a>
+               </div>
+              </li>
+            </div>
+        </nav>
+
+        <!-- NAVBAR -->
+
+        <!-- BANNER -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-interval="2000" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="container">
+              <h1 class="banner">BRAINSTER LABS</h1>
+            </div>
+              <div class="carousel-item active position-relative">
+                  <img class="d-block w-100 " src="./assets/img/4.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/3.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/2.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/1.jpg" alt="Forth slide">
+              </div>
+          </div> 
+        </div>
+        <!-- BANNER END-->
+
+         <!-- BODY -->
+         <div class="container-fluid buttons">
+          <div class="row">
+            <div id="filter-marketing" class="col-12 col-md-4 bg-dark d-flex justify-content-between align-items-center ">
+              <input type="checkbox" id="marketing" style="display: none" />
+              <p class="font-weight-bold text-left mb-0 py-4">
+                Проекти на студенти по академијата <br />
+                за маркетинг
+              </p>
+              <i class="fas fa-check-circle"></i>
+            </div>
+      
+            <div id="filter-coding" class="col-12 col-md-4 bg-dark d-flex justify-content-between align-items-center ">
+              <input type="checkbox" id="coding" style="display: none" />
+              <p class="font-weight-bold text-left mb-0 py-4">
+                Проекти на студенти по академијата <br />
+                за програмирање
+              </p>
+              <i class="fas fa-check-circle"></i>
+            </div>
+      
+            <div id="filter-design" class="col-12 col-md-4 bg-dark d-flex  justify-content-between align-items-center">
+              <input type="checkbox" id="design" style="display: none" />
+              <p class="font-weight-bold text-left mb-0 py-4">
+                Проекти на студенти по академијата <br />
+                за дизајн
+              </p>
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid  bg-warning effect">
+          <div class="continer cards">
+            <h2 class="h1 font-weight-bold text-center py-md-4">Проекти</h2>
+            <div class="d-flex justify-content-center align-content-center flex-wrap">
+
+
+              <!-- CARDS -->
+      
+              <div class="card-1  marketing flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/mick-haupt-S5Lz8y95m1A-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за маркетинг
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 coding flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image text-capitalize">
+                    <img src="./assets/Body images/joshua-burdick-eKgdlWksbWo-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за за програмирање
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 design flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/jessica-knowlden-VcHU3hC_lAM-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за дизајн
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1  marketing flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/mick-haupt-S5Lz8y95m1A-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за маркетинг
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 coding flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/joshua-burdick-eKgdlWksbWo-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за за програмирање
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 design flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/jessica-knowlden-VcHU3hC_lAM-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за дизајн
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1  marketing flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/mick-haupt-S5Lz8y95m1A-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за маркетинг
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 coding flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/joshua-burdick-eKgdlWksbWo-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за за програмирање
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 design flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/jessica-knowlden-VcHU3hC_lAM-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за дизајн
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1  marketing flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/mick-haupt-S5Lz8y95m1A-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за маркетинг
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 coding flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/daniel-k-cheung-cPF2nlWcMY4-unsplash (1).jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за за програмирање
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 design flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/david-marcu-78A265wPiO4-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за дизајн
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-1  marketing flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/jessica-knowlden-VcHU3hC_lAM-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за маркетинг
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 coding flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/joshua-burdick-eKgdlWksbWo-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за за програмирање
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-1  marketing flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/mick-haupt-S5Lz8y95m1A-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за маркетинг
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 coding flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/daniel-k-cheung-cPF2nlWcMY4-unsplash (1).jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за за програмирање
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 coding flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/david-marcu-78A265wPiO4-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за за програмирање
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 coding flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/jessica-knowlden-VcHU3hC_lAM-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за за програмирање
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 coding flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/joshua-burdick-eKgdlWksbWo-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за за програмирање
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card-1 coding flex-grow-0 flex-shrink-0 m-3">
+                <figure class="mb-0">
+                  <div class="card_image">
+                    <img src="./assets/Body images/mick-haupt-S5Lz8y95m1A-unsplash.jpg" class="card-img-top" alt="funny">
+                  </div>
+                  <figcaption class="bg-warning mt-md-3 mx-4">
+                    Академија за за програмирање
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class=" h6 card-title font-weight-bold mb-2">Име на проектот стои овде <br>во две кратки линии</h5>
+                  <p class="card-text mb-2">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <small class="mb-md-3">Февруари - Март 2022</small>
+                  <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-red">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- BODY END-->
+         <footer>
+          <div class="container-fluid text-center text-white bg-dark">
+            <div class="row">
+              <div class="col-12">
+                <p class="p-4 mb-0">
+                  Изработено со &#10084; од студентите на Brainster
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+        <script src="./assets/js/jquery-3.6.0.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/form.js"></script>
+      </body>
+
+      <script>
+        document.getElementsByClassName('custom-select')[0].style.border = "0px";
+        document.getElementsByClassName('custom-select')[0].style.background = "white";
+    </script>
+
+                  <!-- // Hamburger menu -->
+                  <script>
+                    $(document).ready( $(function(){
+                        var navbtn = $('.navbar-toggler');
+                        $(navbtn).click(function(){
+                            $(navbtn).toggleClass('active');
+                        });
+                    }));
+                </script>
+                      <!-- Hide and show div and color black -->
+      <script>
+        $(".navbar-toggler").click(function () {
+        $("nav").toggleClass("bg-dark");
+        });
+        document.querySelector(".navbar-toggler").addEventListener("click", toggleAll);
+
+        function toggleAll() {
+          var logoVisibility = document.querySelector(".navbar-brand").style.visibility;
+          if (logoVisibility == "visible" || logoVisibility == "") {
+            document.querySelector(".navbar-brand").style.visibility = "hidden";
+          } else {
+            document.querySelector(".navbar-brand").style.visibility = "visible";
+          }
+
+          var displayAll = document.querySelector(".none").style.display;
+          if (displayAll == "inline-block" || displayAll == "") {
+            document.querySelector(".none").style.display = "none";
+          } else {
+            document.querySelector(".none").style.display = "inline-block";
+          }
+
+          
+          document.querySelector(".navbar").classList.toggle("nav-shown");
+          document.querySelector(".navbar").classList.toggle("bg-dark");
+        }
+    </script>
+  
+    <!-- CARDS SELECTOR CODE -->
+    <script>
+      document.querySelector("#filter-coding").addEventListener("click", showCoding);
+      document.querySelector("#filter-marketing").addEventListener("click", showMarketing);
+      document.querySelector("#filter-design").addEventListener("click", showDesign);
+  
+      function showCoding() {
+        hideAll();
+  
+        if (!btnIsSelected("#filter-coding")) {
+          document.querySelector("#filter-coding").classList.add("selected");
+          document.querySelector("#filter-marketing").classList.remove("selected");
+          document.querySelector("#filter-design").classList.remove("selected");
+  
+          var codingCards = document.querySelectorAll(".coding");
+          for (var i = 0; i < codingCards.length; i++) {
+            codingCards[i].style.display = "inline-block";
+          }
+        } else {
+          document.querySelector("#filter-coding").classList.remove("selected");
+          showAll();
+        }
+      }
+  
+      function showMarketing() {
+        hideAll();
+  
+        if (!btnIsSelected("#filter-marketing")) {
+          document.querySelector("#filter-marketing").classList.add("selected");
+          document.querySelector("#filter-coding").classList.remove("selected");
+          document.querySelector("#filter-design").classList.remove("selected");
+  
+          var marketingCards = document.querySelectorAll(".marketing");
+          for (var i = 0; i < marketingCards.length; i++) {
+            marketingCards[i].style.display = "inline-block";
+          }
+        } else {
+          document.querySelector("#filter-marketing").classList.remove("selected");
+          showAll();
+        }
+      }
+  
+      function showDesign() {
+        hideAll();
+  
+        if (!btnIsSelected("#filter-design")) {
+          document.querySelector("#filter-design").classList.add("selected");
+          document.querySelector("#filter-coding").classList.remove("selected");
+          document.querySelector("#filter-marketing").classList.remove("selected");
+          var designCards = document.querySelectorAll(".design");
+          for (var i = 0; i < designCards.length; i++) {
+            designCards[i].style.display = "inline-block";
+          }
+        } else {
+          document.querySelector("#filter-design").classList.remove("selected");
+          showAll();
+        }
+      }
+  
+      function btnIsSelected(btn) {
+        return document.querySelector(btn).classList.contains("selected");
+      }
+  
+      function hideAll() {
+        var cards = document.querySelectorAll(".card-1");
+        for (var i = 0; i < cards.length; i++) {
+          cards[i].style.display = "none";
+        }
+      }
+  
+      function showAll() {
+        var cards = document.querySelectorAll(".card-1");
+        for (var i = 0; i < cards.length; i++) {
+          cards[i].style.display = "inline-block";
+        }
+      }
+    </script>
+    <!-- CARDS SELECTOR CODE END -->
+</html>
